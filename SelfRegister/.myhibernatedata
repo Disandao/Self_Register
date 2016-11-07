@@ -1,0 +1,21 @@
+#MyEclipse Hibernate Properties
+#Sun Nov 06 10:50:09 CST 2016
+genBasicCompId=false
+sessionFactoryName=acitonForm.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=false
+keyGenerator=identity
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/SelfRegister/hibernate.reveng.xml
+configFile=/SelfRegister/src/acitonForm/user.hibernate.cfg.xml
+createConfigFile=true
+baseDaoClass=dao.UserDao
