@@ -22,8 +22,9 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractPatientinf(String office, String sex, long idcard,
+	public AbstractPatientinf(Integer serial,String office, String sex, long idcard,
 			String conditions) {
+		this.serial = serial;
 		this.office = office;
 		this.sex = sex;
 		this.idcard = idcard;

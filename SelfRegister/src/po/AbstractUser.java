@@ -21,7 +21,8 @@ public abstract class AbstractUser implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractUser(Integer id, String name, String password) {
+	public AbstractUser(long idcard ,Integer id, String name, String password) {
+		this.idcard = idcard;
 		this.id = id;
 		this.name = name;
 		this.password = password;

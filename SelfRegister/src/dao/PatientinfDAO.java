@@ -21,7 +21,7 @@ import po.Patientinf;
  * @see po.Patientinf
  * @author MyEclipse Persistence Tools
  */
-public class PatientinfDAO extends UserDao {
+public class PatientinfDAO extends DefaultDao {
 	private static final Log log = LogFactory.getLog(PatientinfDAO.class);
 	// property constants
 	public static final String OFFICE = "office";

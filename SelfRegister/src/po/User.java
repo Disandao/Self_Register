@@ -13,8 +13,8 @@ public class User extends AbstractUser implements
 	}
 
 	/** full constructor */
-	public User(Integer id, String name, String password) {
-		super(id, name, password);
+	public User(long idcard,Integer id, String name, String password) {
+		super(idcard,id, name, password);
 	}
 
 }
