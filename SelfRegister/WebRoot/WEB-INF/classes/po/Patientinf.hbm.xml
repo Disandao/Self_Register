@@ -8,7 +8,7 @@
     <class name="po.Patientinf" table="patientinf" catalog="selfregister">
         <id name="serial" type="integer">
             <column name="serial" />
-            <generator class="assigned" />
+            <generator class="increment" />
         </id>
         <property name="office" type="string">
             <column name="office" length="45" />
@@ -21,6 +21,15 @@
         </property>
         <property name="conditions" type="string">
             <column name="conditions" length="45" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="45" not-null="true" />
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="45" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" />
         </property>
     </class>
 </hibernate-mapping>

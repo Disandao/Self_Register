@@ -5,20 +5,11 @@
 <link href="style/alogin.css" rel="stylesheet" type="text/css" />
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>社区医院远程挂号系统登录 </title>
+<title>社区医院远程挂号系统注册 </title>
 </head>
-<script type="text/javascript">
-	function resetValue(){
-		document.getElementById("userName").value="";
-		document.getElementById("password").value="";
-	}
-	
-	function loadimage(){
-		document.getElementById("randImage").src = "image.jsp?"+Math.random();
-	}
-</script>
+
 <body>
-<form id="form" action="login" method="post">
+<form id="form" action="Register" method="post">
     <div class="Main">
         <ul>
             <li class="top"></li>
@@ -31,28 +22,26 @@
             <li class="topD">
                 <ul class="login">
                     <li><span class="left">用户名:</span> <span style="left">
-                        <input type="text" value="${user.userName }" name="user.userName" id="userName"/>  
+                        <input type="text"  name="user.name" id="userName"/>  
                      
                     </span></li>
                     <li><span class="left">密    码:</span> <span style="left">
-                       <input type="password" value="${user.password }" name="user.password" id="password"/>  
+                       <input type="password"  name="user.password" id="password"/>  
                     </span></li>
-                         <li><span class="left">验证码:</span> <span style="left">
-                         <input type="text" value="${imageCode }" name="imageCode" id="imageCode" size="10"/>
+                         <li><span class="left">身份证:</span> <span style="left">
+                         <input type="text"  name="user.idcard" id="idcard" size="20"/>
                     </span>
-                    <span style="left">
-                       <img onclick="javascript:loadimage();"  title="换一张试试" name="randImage" id="randImage" src="image.jsp" width="60" height="20" border="1" align="absmiddle">
-                    </span>
+                    
                     </li>
-                    <li><span style="margin-left:25px"><font color="red" size=4>${error }</font></span></li>
+                  
                 </ul>
             </li>
             <li class="topE"></li>
             <li class="middle_A"></li>
             <li class="middle_B"></li>
             <li class="middle_C">
-            <span style="margin:15px"><input type="submit" value="登录"/></span>
-            <span style="margin:10px"><input type="button" value="注册" onclick="window.location.href='register.jsp'"/></span>
+            <span style="margin:15px"><input type="submit" value="注册"/></span>
+            <span style="margin:10px"><input type="button" value="返回" onClick="history.back()"/></span>
             </li>
             <li class="middle_D"></li>
             <li class="bottom_A"></li>

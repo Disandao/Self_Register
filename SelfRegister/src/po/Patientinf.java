@@ -13,8 +13,9 @@ public class Patientinf extends AbstractPatientinf implements
 	}
 
 	/** full constructor */
-	public Patientinf(Integer serial,String office, String sex, long idcard, String conditions) {
-		super(serial,office, sex, idcard, conditions);
+	public Patientinf(String office, String sex, long idcard,
+			String conditions,String username, String tel, String name) {
+		super(office, sex, idcard, conditions,username,tel,name);
 	}
 
 }

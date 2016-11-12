@@ -9,11 +9,14 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 
 	// Fields
 
-	private Integer serial;
+	private Integer serial=0;
 	private String office;
 	private String sex;
 	private long idcard;
 	private String conditions;
+	private String username;
+	private String tel;
+	private String name;
 
 	// Constructors
 
@@ -22,13 +25,15 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractPatientinf(Integer serial,String office, String sex, long idcard,
-			String conditions) {
-		this.serial = serial;
+	public AbstractPatientinf(String office, String sex, long idcard,
+			String conditions, String username, String tel, String name) {
 		this.office = office;
 		this.sex = sex;
 		this.idcard = idcard;
 		this.conditions = conditions;
+		this.username = username;
+		this.tel = tel;
+		this.name = name;
 	}
 
 	// Property accessors
@@ -71,6 +76,30 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 
 	public void setConditions(String conditions) {
 		this.conditions = conditions;
+	}
+
+	public String getUsername() {
+		return this.username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getTel() {
+		return this.tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

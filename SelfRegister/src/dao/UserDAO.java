@@ -33,16 +33,15 @@ public class UserDAO extends DefaultDao {
 	public static final String ID = "id";
 	public static final String NAME = "name";
 	public static final String PASSWORD = "password";
-	Configuration conf = new Configuration();
-	SessionFactory sf = conf.configure().buildSessionFactory();
-	Session session = sf.openSession();
-	Transaction ts = null;
+	static Configuration conf = new Configuration();
+	static SessionFactory sf = conf.configure().buildSessionFactory();
+	static Session session = sf.openSession();
+	static Transaction ts = null;
 	 /**
 	     * 增加用户
 	     * @param user 要增加的用户
 	     */
-	   public void add(User user){
-		   Session session = sf.openSession();
+	   public static void add(User user){
 	        Transaction ts = null;
 	        try{
 	            ts = session.beginTransaction();
@@ -64,7 +63,6 @@ public class UserDAO extends DefaultDao {
 	     */
 	    public int isExist(String name,String password){
 	        //int state = 0 ;        //初始化状态变量
-	    	Session session = sf.openSession();
 	        try{
 	            Query query = session.createQuery("from User u where u.name = ?");
 	            query.setString(0, name);
@@ -107,7 +105,7 @@ public class UserDAO extends DefaultDao {
         }
 	}
 
-	public User findByIdcard(long idcard) {
+	public static User findByIdcard(long idcard) {
 		try {
 			ts = session.beginTransaction();
 			Query query = session.createQuery("from User u where u.idcard=?");  

@@ -4,7 +4,16 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
+		<action name="Login" class="actions.Login_Action">
+			<result name="users">main.jsp</result>
+			<result name="admin">admin.jsp</result>
+			<result name="doctor">doctor.jsp</result>
+		</action>
 		
-				
+		<action name="Register" class="actions.Register_Action">
+			<result name="SUCCESS">index.jsp</result>
+			<result name="FAILED">re_fail.jsp</result>
+		</action>
+		
 	</package>
 </struts>    
