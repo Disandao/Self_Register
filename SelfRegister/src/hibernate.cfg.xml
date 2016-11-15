@@ -8,15 +8,15 @@
     <session-factory>
     <property name="connection.username">root</property>
         <property name="connection.url">
-            jdbc:mysql://localhost:3306/selfregister
+            jdbc:mysql://localhost:3306/cmn
        </property>
        <property name="dialect">
            org.hibernate.dialect.MySQLDialect
        </property>
       <property name="myeclipse.connection.profile">
-            selfregister
+            cmn
        </property>
-        <property name="connection.password"></property>
+        <property name="connection.password">1234</property>
         <property name="connection.driver_class">
             com.mysql.jdbc.Driver
        </property>
@@ -24,6 +24,9 @@
        <!-- POJO类映射配置 -->
         <mapping resource="po/User.hbm.xml" />
         <mapping resource="po/Patientinf.hbm.xml" />
+        <mapping resource="po/Department.hbm.xml" />
+        <mapping resource="po/Doctor.hbm.xml" />
+         <mapping resource="po/Roster.hbm.xml" />
     </session-factory>
 
 </hibernate-configuration>

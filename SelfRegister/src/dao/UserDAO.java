@@ -1,6 +1,8 @@
 package dao;
 
 import java.util.Iterator;
+
+
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -95,7 +97,7 @@ public class UserDAO extends DefaultDao {
 	public void delete(long idcard) {
 		try {
 			 	ts = session.beginTransaction();
-			   Query query = session.createQuery("delete from User u where u.idcard=?");  
+			 	Query query = session.createQuery("delete from User u where u.idcard=?");  
 			    query.setLong(0, idcard);//设定条件参数  
 			    query.executeUpdate();
 			    System.out.println("删除成功！");

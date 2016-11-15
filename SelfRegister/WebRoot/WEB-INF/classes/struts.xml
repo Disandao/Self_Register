@@ -3,8 +3,13 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
+	
 	<package name="default" namespace="/" extends="struts-default">
-		
-				
+		 <action name="DepartList" class="actions.DepartmentDetail_Action">
+            <result name="depart_list">department_information.jsp</result>
+        </action>
+		<action name="DoctorList" class="actions.DepartToDoc_Action">
+            <result name="departtodoc_list">departtodoc.jsp</result>
+        </action>		
 	</package>
 </struts>    

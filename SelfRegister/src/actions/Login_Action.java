@@ -1,5 +1,9 @@
 package actions;
-import java.util.List; 
+import java.util.List;
+
+
+ 
+
 import java.util.Date;
 import java.util.Iterator; 
 
@@ -14,7 +18,7 @@ import po.Patientinf;
 import po.User;
 public class Login_Action {
 	   private static SessionFactory factory; 
-	   public static void main(String[] args) {
+	 /*  public static void main(String[] args) {
 		 // Configuration conf = new Configuration();
 		  ///SessionFactory sf = conf.configure().buildSessionFactory();
 		  //Session sess = sf.openSession();
@@ -42,7 +46,7 @@ public class Login_Action {
 	      //sess.save(test);
 	     // tx.commit();
 	    //  sf.close();
-	   }
+	   }*/
 	 
 	
 	}
