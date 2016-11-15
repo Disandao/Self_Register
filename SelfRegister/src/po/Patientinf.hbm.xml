@@ -31,5 +31,8 @@
         <property name="name" type="string">
             <column name="name" length="45" not-null="true" />
         </property>
+         <property name="doctorid" type="string">
+            <column name="doctorid" length="45" not-null="true" />
+        </property>
     </class>
 </hibernate-mapping>

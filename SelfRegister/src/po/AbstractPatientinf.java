@@ -17,8 +17,17 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 	private String username;
 	private String tel;
 	private String name;
+	private String doctorid;
 
 	// Constructors
+
+	public String getDoctorid() {
+		return doctorid;
+	}
+
+	public void setDoctorid(String doctorid) {
+		this.doctorid = doctorid;
+	}
 
 	/** default constructor */
 	public AbstractPatientinf() {
@@ -26,7 +35,7 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 
 	/** full constructor */
 	public AbstractPatientinf(String office, String sex, long idcard,
-			String conditions, String username, String tel, String name) {
+			String conditions, String username, String tel, String name,String doctorid) {
 		this.office = office;
 		this.sex = sex;
 		this.idcard = idcard;
@@ -34,6 +43,7 @@ public abstract class AbstractPatientinf implements java.io.Serializable {
 		this.username = username;
 		this.tel = tel;
 		this.name = name;
+		this.doctorid = doctorid;
 	}
 
 	// Property accessors

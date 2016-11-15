@@ -61,7 +61,7 @@ public class UserDAO extends DefaultDao {
 	     * @param password
 	     * @return -1:不存在用户名 ; -2:密码不正确 ; >0:登录成功(即返回该记录ID)
 	     */
-	    public int isExist(String name,String password){
+	    public static int isExist(String name,String password){
 	        //int state = 0 ;        //初始化状态变量
 	        try{
 	            Query query = session.createQuery("from User u where u.name = ?");

@@ -24,6 +24,9 @@
        <!-- POJO类映射配置 -->
         <mapping resource="po/User.hbm.xml" />
         <mapping resource="po/Patientinf.hbm.xml" />
+        <mapping resource="po/Department.hbm.xml" />
+        <mapping resource="po/Doctor.hbm.xml" />
+         <mapping resource="po/Roster.hbm.xml" />
     </session-factory>
 
 </hibernate-configuration>

@@ -22,7 +22,7 @@
             <li class="topD">
                 <ul class="login">
                     <li><span class="left">用户名:</span> <span style="left">
-                        <input type="text"  name="user.name" id="userName"/>  
+                        <input type="text"  name="user.name" id="Name"/>  
                      
                     </span></li>
                     <li><span class="left">密    码:</span> <span style="left">

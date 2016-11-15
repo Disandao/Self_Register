@@ -5,7 +5,8 @@
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
 		<action name="Login" class="actions.Login_Action">
-			<result name="users">main.jsp</result>
+			<result name="error">index.jsp</result>
+			<result name="patient">main.jsp</result>
 			<result name="admin">admin.jsp</result>
 			<result name="doctor">doctor.jsp</result>
 		</action>
@@ -14,6 +15,19 @@
 			<result name="SUCCESS">index.jsp</result>
 			<result name="FAILED">re_fail.jsp</result>
 		</action>
+		<action name="Patientinf" class="actions.Patientinf_Action">
+			<result name="SUCCESS">doctor_detail.jsp</result>
+			
+		</action>
+		 <action name="DepartList" class="actions.DepartmentDetail_Action">
+            <result name="depart_list">department_information.jsp</result>
+        </action>
+		<action name="DoctorList" class="actions.DepartToDoc_Action">
+            <result name="departtodoc_list">departtodoc.jsp</result>
+        </action>		
+        <action name="DoctorDetail" class="actions.DoctorDetail_Action">
+            <result name="doctor_detail">doctor_detail.jsp</result>
+        </action>	
 		
 	</package>
 </struts>    
