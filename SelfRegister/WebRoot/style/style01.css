@@ -101,7 +101,7 @@ input.submit{
 color:#FFFFFF;
 position:absolute;
 left:830px;
-top:400px;
+top:600px;
 background-color:#0fcdf6;
 padding:2px 5px 2px 5px;
 cursor:pointer;
@@ -111,7 +111,7 @@ input.reset{
 color:#FFFFFF;
 position:absolute;
 left:790px;
-top:400px;
+top:600px;
 background-color:#50c150;
 cursor:pointer;
 padding:2px 5px 2px 5px;

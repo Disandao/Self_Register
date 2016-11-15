@@ -2,6 +2,7 @@ package dao;
 
 import java.util.List;
 
+
 import java.util.Set;
 
 import org.apache.commons.logging.Log;
@@ -82,6 +83,18 @@ public class DoctorDAO extends DefaultDao {
 			throw re;
 		}
 	}
+	public List findByName(java.lang.String Name) {
+		//log.debug("getting Doctor instance with id: " + id);
+		try {
+			ts = session.beginTransaction();
+			String queryString = "from Doctor d where d.docName='"+Name+"'";
+			Query queryObject = session.createQuery(queryString);
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("get failed", re);
+			throw re;
+		}
+	}
 	public List findAll() {
 		//log.debug("finding all Roster instances");
 		try {
@@ -121,7 +134,7 @@ public class DoctorDAO extends DefaultDao {
 		}
 	}*/
 
-/*	public List findByProperty(String propertyName, Object value) {
+	public List findByProperty(String propertyName, Object value) {
 		log.debug("finding Doctor instance with property: " + propertyName
 				+ ", value: " + value);
 		try {
@@ -134,11 +147,11 @@ public class DoctorDAO extends DefaultDao {
 			log.error("find by property name failed", re);
 			throw re;
 		}
-	}*/
-
-	/*public List findByDocName(Object docName) {
+	}
+	public List findByDocName(Object docName) {
 		return findByProperty(DOC_NAME, docName);
 	}
+	/*
 
 	public List findByDocTel(Object docTel) {
 		return findByProperty(DOC_TEL, docTel);

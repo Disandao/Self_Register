@@ -25,7 +25,10 @@ public class Patientinf_Action extends ActionSupport{
 	public String execute() throws Exception
 	{
 		PatientinfDAO t = new PatientinfDAO();
-		pa.setDoctorid("2233");
+		if(pa.getDoctorid()==null||pa.getDoctorid().isEmpty())
+		{
+			pa.setDoctorid("2233");
+		}
 		pa.setUsername("zyz");
 		t.add(pa);
 		return "SUCCESS";

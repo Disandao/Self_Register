@@ -6,7 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>医生详细信息</title>	
 <link href="style/templatemo_style2.css" rel="stylesheet" type="text/css" />
-<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.html" ></IFRAME> 
+<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.jsp" ></IFRAME> 
+<%
+String doctorid = (String)request.getAttribute("id");
+ %>
 <p style=line-height: 150%>
 </head>
 <body>
@@ -23,7 +26,7 @@
                     <div class="posttext">
 	                    <p>
                         	个人信息：<s:property value="doc.docInfor" /><br>联系电话：<s:property value="doc.docTel" /></p>
-                      <div class="comment_more"><span style="margin:10px"><input type="button" value="预约" onclick="window.location.href='self_register.jsp'"/></span></div>
+                      <div class="comment_more"><span style="margin:10px"><input type="button" value="预约" onclick="window.location.href='self_register.jsp?id=<%=doctorid%>'"/></span></div>
                   </div>
               </div>
             </div>
@@ -34,21 +37,16 @@
 </div>
 <div class="paiban">
 <%
-//String[] week=(String[])request.getAttribute("week");
-//String monday = week[0];
-//String tuesday = week[1];
-//String wednesday = week[2];
-//String thursday = week[3];
-//String friday = week[4];
-//String saturday = week[5];
-//String sunday = week[6];
-String monday = "6611";
-String tuesday = "6161";
-String wednesday = "1661";
-String thursday = "6231";
-String friday = "6341";
-String saturday = "6111";
-String sunday = "1111";
+String[] week=(String[])request.getAttribute("week");
+
+String monday = week[0];
+String tuesday = week[1];
+String wednesday = week[2];
+String thursday = week[3];
+String friday = week[4];
+String saturday = week[5];
+String sunday = week[6];
+
 %>
   <script type="text/javascript">    
  function showTime(count){ 
@@ -63,7 +61,15 @@ String sunday = "1111";
   	//var second=time.getSeconds(); 
  	 month<10?month='0'+month:month; 
   	month=month+1;
-  	day = day%8;
+  	if(day%7==0)
+  	{
+  		day =7;
+  	}
+  	else
+  	{
+  		day = day%7;
+  	}
+  	
   	//hour<10?hour='0'+hour:hour; 
   	//minutes<10?minutes='0'+minutes:minutes; 
   	//second<10?second='0'+second:second; 

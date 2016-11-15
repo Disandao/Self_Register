@@ -7,8 +7,8 @@
 <title>Blog Template - Free CSS Website-mianfeimoban.com</title>
 <meta name="keywords" content="Blog Template, Free CSS Website, templatemo" />
 <meta name="description" content="Blog Template Layout - Free CSS Website from TemplateMo.com" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.html" ></IFRAME> 
+<link href="style/templatemo_style.css" rel="stylesheet" type="text/css" />
+<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.jsp" ></IFRAME> 
 <p style=line-height: 150%>
 </head>
 <body>
@@ -44,9 +44,10 @@
         
         	<div class="rc_panel">
                 <div class="rc_panelbody">
-                    <form method="post" action="#">
-                      <input class="textfield" name="search" type="text" value="Search..." id="keyword"/> <input class="button" type="submit" name="Submit" value="Go" />
-                    </form>
+                   <s:form action="DoctorSearch" theme="simple"> 
+                     	<s:textfield label="医生名字" name="docName" value="查询医生..."/>
+   						<s:submit value="Go" cssStyle="width:40px;"/>     
+     				</s:form>
                 </div>
 			</div>
 		</div>

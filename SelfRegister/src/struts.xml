@@ -16,7 +16,7 @@
 			<result name="FAILED">re_fail.jsp</result>
 		</action>
 		<action name="Patientinf" class="actions.Patientinf_Action">
-			<result name="SUCCESS">doctor_detail.jsp</result>
+			<result name="SUCCESS">sr_suc.jsp</result>
 			
 		</action>
 		 <action name="DepartList" class="actions.DepartmentDetail_Action">
@@ -28,6 +28,12 @@
         <action name="DoctorDetail" class="actions.DoctorDetail_Action">
             <result name="doctor_detail">doctor_detail.jsp</result>
         </action>	
+		<action name="DoctorAll" class="actions.DoctorAll_Action">
+            <result name="doc_all">doc_all.jsp</result>
+        </action>	
+        <action name="DoctorSearch" class="actions.DoctorSearch_Action">
+            <result name="doc_search">doc_all.jsp</result>
+        </action>
 		
 	</package>
 </struts>    

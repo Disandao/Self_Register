@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,10 +27,10 @@
 	<div id="topmenu">
 				<div class="rights"></div>
 				<div class="lefts"><ul>
-				<li><a href="http://www.free-css-templates.com" title="home">首页</a></li>
+				<li><a href="main.jsp" title="home" target="_top">首页</a></li>
 							<li><a href="self_register.jsp" title="" target="_top">预约挂号</a></li>
-							<li><a href="departtodoc.jsp" title="">医生信息展示</a></li>
-							<li><a href="" title="">XXXXX</a></li>
+							<li><a href="<s:url action="DoctorAll"></s:url>" target="_top">医生信息展示</a></li>
+							<li><a href="#" title="">xxxx</a></li>
 							<li><a href="depart1.jsp" title="" target="_top">按科室挂号</a></li>
 							<li><a href="#" title="">ABOUTS US</a></li>
 							<li><a href="#" title="">CONTACT</a></li>

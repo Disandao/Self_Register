@@ -1,6 +1,7 @@
 package actions;
 import java.util.*;
 
+import org.apache.struts2.ServletActionContext;
 import org.hibernate.HibernateException; 
 import org.hibernate.Session; 
 import org.hibernate.Transaction;
@@ -40,7 +41,7 @@ public class DoctorDetail_Action extends ActionSupport{
 	private String docId;
 	private Doctor doc;
 	private List<Roster> list_table;
-	private String[] week;
+	private String[] week=new String[6];
 	public String getDocId() {
 		return docId;
 	}
@@ -62,13 +63,36 @@ public class DoctorDetail_Action extends ActionSupport{
 	}
 	public String execute() throws Exception{
 		 DoctorDAO d = new DoctorDAO();
-		 week = null;
+		 String[] week = new String[7] ;
 		 System.out.println(docId);
+		 ServletActionContext.getRequest().setAttribute("id", docId);
 		 doc = d.findById(docId);
 		 RosterDAO r = new RosterDAO();
-		 list_table = r.findByDoctor(doc);
-		 Iterator it1 = list_table.iterator();
-		 if(it1.hasNext())
+		 List<Roster> list = r.findByDoctor(doc);
+		 if(list==null||list.isEmpty())
+		 {
+			 return "failed";
+		 }
+		 
+		 //list_table = r.findByDoctor(doc);
+		 Iterator it1 = list.iterator();
+		 Roster tab = (Roster)it1.next();
+		 if(tab!=null)
+		 {
+			 week[0]=(String)tab.getRosterMon();
+	    	 week[1]=(String)tab.getRosterTue();
+	    	 week[2]=(String)tab.getRosterWed();
+	    	 week[3]=(String)tab.getRosterThu();
+	    	 week[4]=(String)tab.getRosterFri();
+	    	 week[5]=(String)tab.getRosterSat();
+	    	 week[6]=(String)tab.getRosterSun();
+			 ServletActionContext.getRequest().setAttribute("week", week);
+			 System.out.println(tab.getRosterMon());
+			 System.out.println(tab.getRosterTue());
+			 System.out.println(tab.getRosterWed());
+		 }
+		 
+		/* if(it1.hasNext())
 		 {
 			 while(it1.next() != null)
 		     {
@@ -85,7 +109,7 @@ public class DoctorDetail_Action extends ActionSupport{
 		    	 week[6]=(String)tab.getRosterSun();
 		    	 System.out.println(week);
 		     }
-		 }
+		 }*/
 	    
 		 
 	     return "doctor_detail";

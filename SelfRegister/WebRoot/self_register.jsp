@@ -1,7 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" pageEncoding="UTF-8"%>
+<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.jsp" ></IFRAME> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<%
+String name=(String)request.getParameter("id");
+%>
 <script src="js/scriptaculous/lib/prototype.js" type="text/javascript"></script>
 <script src="js/scriptaculous/src/effects.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/validation.js"></script>
@@ -27,12 +31,14 @@ if(a.getAttribute("title") == title) a.disabled = false;
 <link title="style03" rel="alternate stylesheet" href="style/style03.css" type="text/css" />
 </head>
 <body>
+
     <div class="style_changer">
     	
     </div>
 
 	<div class="form_content">
     <form id="test" action="Patientinf" method="get">
+    
     <fieldset>
         <legend>个人信息</legend>
         <div class="form-row">
@@ -43,6 +49,7 @@ if(a.getAttribute("title") == title) a.disabled = false;
         <div class="form-row">
             <div class="field-label"><label for="field2">性别</label>:</div>
             <div class="field-widget"><input name="pa.sex" id="field2" class="required" title="Enter your sex" /></div>
+           <input name="pa.doctorid" type="hidden" id="id" value="<%=name%>">
         </div>
         
         <div class="form-row">
