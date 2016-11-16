@@ -178,7 +178,8 @@ p {
 .post {
 	float: left;
 	width: 500px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
+	padding-left: 80px;
 }
 
 .postdate{
@@ -189,9 +190,9 @@ p {
 
 .postbody {
 	float: left;
-	width: 650px;
-	padding-left: 50px;
-	border-left: 50px solid #666666;
+	width: 2000px;
+	padding-left: 20px;
+	border-left: 5px solid #666666;
 }
 
 .postbody img {
@@ -202,7 +203,7 @@ p {
 
 .posttext{
 	float: left;
-	width: 400px;
+	width: 600px;
 }
 
 .postdate {
@@ -235,10 +236,11 @@ p {
 
 .comment_more {
 	clear: both;
+	float:right;
 	width: 310px;
 	text-align: right;
 	height: 20px;
-	left:2000px;
+	left:3000px;
 }
 
 .comment_more span {
@@ -476,6 +478,6 @@ p {
 .paiban{
 	float:left;
 	position:absolute;
-	left:200px;
-	top:250px;
+	left:150px;
+	top:300px;
 }

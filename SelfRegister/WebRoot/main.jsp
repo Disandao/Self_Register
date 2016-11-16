@@ -19,37 +19,38 @@
 	</div>
     
     <div id="liucheng">
-    <h>流程</h>
-    <p>1.</p>
-    <p>2.</p>
-    <p>3.</p>
-    <p>4.</p></div>
+    <h>预约挂号流程</h>
+    <p>方式一:直接点击预约挂号填写信息。</p>
+    <p>方式二:按科室查询,选择相应科室的医生。</p>
+    <p>方式三:填写病情，系统推荐相应医生。</p>
+    <p>方式四:直接查询医生信息,完成预约挂号。</p></div>
     
 	<div id="jianjie">
     <img src="images/hospital.jpg" />
-    <h>简介</h>
-    <p>vcjabcjhsbjcbhsc</p>
+    <h>医院简介</h>
+    <p>XX医院创建于XXXX年，是集医疗、保健、教学、科研于一体的大型现代化综合性医院。医院是XX重要保健基地，承担XX/XX等多个体系单位、XX的医疗保健和各XX/XX转诊、后送的疑难病症治疗任务、医院同时又是XXX医学院，以
+   研究生教育为主，是XXX唯一一所XX办学单位。</p>
     </div>
 	
 	<div id="main">
 		<div id="rightside">
-			<h2>Categories:</h2>
+			<h2>常见问题:</h2>
 			<div class="box"><ul>
-			<li><a href="#" title="Articles">Templates (15)</a></li>
-							<li><a href="#" title="Gallery">Internet (10) </a></li>
-							<li><a href="#" title="Affiliates">Tutorials (23)</a></li>
-							<li><a href="#" title="Articles">Photoshop (11)</a></li>
-							<li><a href="#" title="Abous us">sNews (16)</a></li>
-							<li><a href="#" title="Contact">Personal (5)</a></li>
+			<li><a href="#" title="Articles">[医疗公告]就诊取药提示</a></li>
+							<li><a href="#" title="Gallery">[医疗公告]如何预约挂号? </a></li>
+							<li><a href="#" title="Affiliates">XXXXXXXX</a></li>
+							<li><a href="#" title="Articles">XXXXXX</a></li>
+							<li><a href="#" title="Abous us">XXXXXXX</a></li>
+							<li><a href="#" title="Contact">XXXXXXXX</a></li>
 			</ul></div>
-			<h2>New Articles:</h2>
+			<h2>预防疾病小知识:</h2>
 			<div class="box"><ul>
-			<li><a href="#" title="#">I would like to send...</a></li>
-							<li><a href="#" title="#">This simple tutorial will...</a></li>
-							<li><a href="#" title="#">To make this nice fade...</a></li>
-							<li><a href="#" title="#">If you want to advertise...</a></li>
-							<li><a href="#" title="#">This has to be one of the...</a></li>
-							<li><a href="#" title="#">This day I would like to...</a></li>
+			<li><a href="#" title="#">如何预防诺拉病毒？</a></li>
+							<li><a href="#" title="#">XXXXXXXX.</a></li>
+							<li><a href="#" title="#">XXXXXXXX</a></li>
+							<li><a href="#" title="#">XXXXXXXX.</a></li>
+							<li><a href="#" title="#">XXXXXXXX</a></li>
+							<li><a href="#" title="#">XXXXXXXXX</a></li>
 			</ul></div>
 			
 			
@@ -57,9 +58,9 @@
 		<div id="leftside">
 			<h2>病情推荐</h2>
 			<p>
-This is Minimalistic , a free, fully standards-compliant CSS template designed by <a href="http://www.free-css-templates.com/">Free CSS Templates</a>.
+			病人可以在这里通过填写表单，阐述自己的病情 <a href="http://www.free-css-templates.com/">XXXs</a>.
 
-This free template is released under a Creative Commons Attributions 2.5 license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact. Aside from that, have fun with it :) 
+然后通过提交表单来进行预约挂号，系统将自动为病人根据病情推荐相应想医生。
 			</p>
 	</div>
     

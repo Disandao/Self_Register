@@ -26,8 +26,9 @@ String doctorid = (String)request.getAttribute("id");
                     <div class="posttext">
 	                    <p>
                         	个人信息：<s:property value="doc.docInfor" /><br>联系电话：<s:property value="doc.docTel" /></p>
-                      <div class="comment_more"><span style="margin:10px"><input type="button" value="预约" onclick="window.location.href='self_register.jsp?id=<%=doctorid%>'"/></span></div>
+                      <div class="comment_more"><input type="button" value="预约" onclick="window.location.href='self_register.jsp?id=<%=doctorid%>'"/></span></div>
                   </div>
+                  
               </div>
             </div>
 
@@ -96,7 +97,7 @@ String seventh = "<script type='text/javascript'>showTime(6)</script>";
 
 
  %>
-<table align="center" width="100%"  border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#F6B83B" bordercolorlight="#FFFFFF" bgcolor="#FFCC99"  >
+<table align="center" width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#F6B83B" bordercolorlight="#FFFFFF" bgcolor="#FFCC99"  >
   <tr align="center" bgcolor="#e3F4F7">
    <td width="5%" bgcolor="#F9D16B"></td>
     <td width="12%" bgcolor="#F9D16B" id=0><%=first%></td>  
