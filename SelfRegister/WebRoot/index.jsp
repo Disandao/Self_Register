@@ -29,7 +29,7 @@ request.setAttribute("sRand",s);
             <li class="top2"></li>
             <li class="topA"></li>
             <li class="topB"><span>
-                <img src="images/login/logo.png" alt="" style="" />
+                <img src="images/login/logo.png" />
             </span></li>
             <li class="topC"></li>
             <li class="topD">

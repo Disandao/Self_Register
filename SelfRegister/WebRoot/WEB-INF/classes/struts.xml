@@ -4,21 +4,55 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
+	
+	<action name="IllnessAdvice" class="actions.IllnessAdvice_Action">
+            <result name="illnesstodoc_list">departtodoc.jsp</result>
+        </action>
+	
 		<action name="Login" class="actions.Login_Action">
 			<result name="error">index.jsp</result>
 			<result name="patient">main.jsp</result>
-			<result name="admin">admin.jsp</result>
-			<result name="doctor">doctor.jsp</result>
+			<result type="chain" name="admin">PatientALL</result>
+			<result type="chain" name="doctor">DocLog</result>
 		</action>
-		
+		<action name="PatientALL" class="actions.AdminPitient_Action">
+			<result name="success">admin.jsp</result>
+		</action>
+		<action name="StatisticD" class="actions.StatisticD_Action">
+			<result name="success">StatisticD.jsp</result>
+		</action>
+		<action name="StatisticF" class="actions.StatisticF_Action">
+			<result name="success">StatisticF.jsp</result>
+		</action>
+		<action name="DocLog" class="actions.LoginDoctorQ_Action"> 
+			<result name="success">doctor_login.jsp</result> 
+			<result name="failed">re_fail.jsp</result>   
+		</action>
 		<action name="Register" class="actions.Register_Action">
 			<result name="SUCCESS">index.jsp</result>
 			<result name="FAILED">re_fail.jsp</result>
 		</action>
 		<action name="Patientinf" class="actions.Patientinf_Action">
 			<result name="SUCCESS">sr_suc.jsp</result>
-			
 		</action>
+		<action name="Privateinf" class="actions.PrivateInf_Action">
+			<result name="success">Private_inf.jsp</result>
+		</action>
+		<action name="DeleteRegister" class="actions.DeleteRegister_Action">
+			<result type="chain" name="success">Privateinf</result>
+			<result type="chain" name="admin">PatientALL</result>
+		</action>
+		<action name="MessagePageDetail" class="actions.MessagePageDetail_Action">
+            <result name="messagepage_detail">message_list.jsp</result>
+        </action> 
+        <action name="MessageAdd" class="actions.MessageAdd_Action">
+            <result name="message_add">main.jsp</result>
+        </action> 
+		
+		<action name="ListPatient" class="actions.ListPitient_Action">
+			<result name="success">doctor_patient.jsp</result>
+		</action>
+		
 		 <action name="DepartList" class="actions.DepartmentDetail_Action">
             <result name="depart_list">department_information.jsp</result>
         </action>

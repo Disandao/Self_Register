@@ -129,6 +129,30 @@ public class UserDAO extends DefaultDao {
 		}
 		
 	}
+	public static User findByName(String string) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from User u where u.name=?");  
+			 query.setString(0, string);//设定条件参数 
+			 List list = query.list();
+	         Iterator it = list.iterator();
+	         if(it.hasNext())
+	         {
+	        	 User user = (User)it.next();
+		         return user;
+	         }
+	         else
+	         {
+	        	System.out.println("用户不存在");
+		        return null;
+	         }
+	         
+		} catch (RuntimeException re){
+			log.error("get failed", re);
+			throw re;
+		}
+		
+	}
 /*
 	public List findByExample(User instance) {
 		log.debug("finding User instance by example");

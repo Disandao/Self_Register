@@ -1,5 +1,6 @@
 package dao;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -58,11 +59,11 @@ public class PatientinfDAO extends DefaultDao {
 	        }
 	    }
 
-	   public void delete(Integer serial) {
+	   public void delete(String idcard) {
 			try {
 				 	ts = session.beginTransaction();
-				   Query query = session.createQuery("delete from Patientinf p where p.serial=?");  
-				    query.setLong(0, serial);//设定条件参数  
+				   Query query = session.createQuery("delete from Patientinf p where p.idcard=?");  
+				    query.setString(0, idcard);//设定条件参数  
 				    query.executeUpdate();
 				    System.out.println("删除成功！");
 				    ts.commit();
@@ -199,6 +200,45 @@ public class PatientinfDAO extends DefaultDao {
 			throw re;
 			}
 		}
+	public List findBydoctorID(String idcard) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.doctorid=?");  
+			 query.setString(0, idcard);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
+	}
+	public List findByoffice(String office) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.office=?");  
+			 query.setString(0, office);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
+	}
+	public List findByUsername(String name) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.username=?");  
+			 query.setString(0, name);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
+	}
 	public void update(String name,String tel,String conditions,long idcard,String office,String username,int serial) {
 		try {
 			ts = session.beginTransaction();

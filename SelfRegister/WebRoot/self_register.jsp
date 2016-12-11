@@ -66,12 +66,20 @@ if(a.getAttribute("title") == title) a.disabled = false;
             <div class="field-label"><label for="field5">科室</label>:</div>
             <div class="field-widget">
                 <select id="field6" name="pa.office" class="validate-selection" title="Choose your department">
-                    <option>Select one...</option>
-                    <option>Accounts</option>
-                    <option>Human Resources</option>
-                    <option>Information Technology</option>
-                    <option>Animal Management</option>
-                    <option>Ultimate Frisby</option>
+                    <option>产科</option>
+                    <option>免疫科</option>
+                    <option>内分泌科</option>
+                    <option>功能神经外科</option>
+                    <option>妇泌尿科</option>
+                    <option>心血管内科</option>
+                    <option>心血管外科</option>
+                    <option>整形科</option>
+                    <option>消化内科</option>
+                    <option>神经内科</option>
+                    <option>神经外科</option>
+                    <option>胸外科</option>
+                    <option>计划生育科</option>
+                    <option>遗传咨询科</option>
                 </select>
             </div>
         </div>

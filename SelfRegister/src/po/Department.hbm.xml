@@ -19,5 +19,11 @@
             </key>
             <one-to-many class="po.Doctor" />
         </set>
+        <set name="illnesses" inverse="true">
+            <key>
+                <column name="illness_depart" length="50" />
+            </key>
+            <one-to-many class="po.Illness" />
+        </set>
     </class>
 </hibernate-mapping>

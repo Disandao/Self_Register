@@ -129,13 +129,12 @@ body {
 }
 #liuyan textarea{
 	position:relative;
-	left:100px;
-	width:300px;
+	width:100%;
 	height:150px;
 }
 #liuyan input{
 	position:relative;	
-	left:100px;
+	left:900px;
 	top:0px;
 }
 #subheader a { text-decoration: none; border-bottom: 1px dashed #0066B3; } 

@@ -3,6 +3,8 @@ package actions;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.struts2.ServletActionContext;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 import po.Patientinf;
@@ -24,13 +26,16 @@ public class Patientinf_Action extends ActionSupport{
 	}
 	public String execute() throws Exception
 	{
+		String username = (String)ServletActionContext.getRequest().getSession().getAttribute("sessionname");
 		PatientinfDAO t = new PatientinfDAO();
-		if(pa.getDoctorid()==null||pa.getDoctorid().isEmpty())
+		/*if(pa.getDoctorid()==null||pa.getDoctorid().isEmpty())
 		{
 			pa.setDoctorid("2233");
-		}
-		pa.setUsername("zyz");
+		}*/
+		System.out.println("@@@"+pa.getDoctorid());
+		pa.setUsername(username);
 		t.add(pa);
+		System.out.println("@@@"+pa.getDoctorid());
 		return "SUCCESS";
 	}
 	/*

@@ -27,6 +27,8 @@
         <mapping resource="po/Department.hbm.xml" />
         <mapping resource="po/Doctor.hbm.xml" />
          <mapping resource="po/Roster.hbm.xml" />
+         <mapping resource="po/Message.hbm.xml" />
+          <mapping resource="po/Illness.hbm.xml" />
     </session-factory>
 
 </hibernate-configuration>

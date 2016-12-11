@@ -2,13 +2,15 @@
 <IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.jsp" ></IFRAME> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<%
+long idcard = Long.valueOf(String.valueOf(request.getSession().getAttribute("sessionidcard"))).longValue();
+ %>
 <head>
 	<title>Minimalistic template-mianfeimoban.com</title>
 	<meta http-equiv="Content-Language" content="English" />
 	<meta name="Robots" content="index,follow" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="style/zhuyestyle.css" media="screen" /> 
-
+	<link rel="stylesheet" type="text/css" href="style/zhuyestyle.css" media="screen" />
 <p style=line-height: 150%> 
 </head>
 <body>
@@ -55,24 +57,35 @@
 			
 			
 		</div>
-		<div id="leftside">
-			<h2>病情推荐</h2>
-			<p>
-			病人可以在这里通过填写表单，阐述自己的病情 <a href="http://www.free-css-templates.com/">XXXs</a>.
-
-然后通过提交表单来进行预约挂号，系统将自动为病人根据病情推荐相应想医生。
-			</p>
-	</div>
+		
     
 		<div id="liuyan">
+		<script>
+		function GetQueryString(name) {
+   			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+   			var r = window.location.search.substr(1).match(reg);
+   			if (r!=null) 
+   			{
+   			location.hash="#000";
+   			return (r[2]);
+   			}
+   		 	return null;
+		}
+		GetQueryString("pid");
+		</script>
         <h>留言区：</h>
-        <p>xxx</p>
-        <p>xxx</p>
-        <p>xxx</p>
-        <form>
-            <textarea name=""></textarea>
+         <IFRAME NAME="content_frame"  frameborder="0"  width=100% height=500 marginwidth=0 marginheight=0 SRC="MessagePageDetail.action"></IFRAME>
+         <a name="000" id="000"><h>我要评论</h>
+     	</a>
+         
+        <form  action="MessageAdd" method="get">
+        	
+            <textarea name="message.words" class="required" ></textarea>
+             <input name="idcard" type="hidden"  value="<%=idcard%>"/>
+           	 <input name="pid" type="hidden" value="<%=request.getParameter("pid") %>"/>
+			
             <input type="submit" class="submit" value="提交" /> 
-    <input class="reset" type="button" value="重置" onclick="valid.reset(); return false" />
+    		<input class="reset" type="button" value="重置" onclick="valid.reset(); return false" />
         </form>
         
    </div>

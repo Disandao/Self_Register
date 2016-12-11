@@ -14,6 +14,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Example;
+
 import po.Department;
 import po.Doctor;
 
@@ -55,6 +56,9 @@ public class DoctorDAO extends DefaultDao {
 			sf.close();
 		}
 	}
+	
+	
+
 
 	public void delete(Doctor persistentInstance) {
 		//log.debug("deleting Doctor instance");
@@ -113,6 +117,32 @@ public class DoctorDAO extends DefaultDao {
 		try {
 			ts = session.beginTransaction();
 			String queryString = "select d from Doctor d where d.department.departName='"+depart.getDepartName()+"'";
+			Query queryObject = session.createQuery(queryString);
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
+	public List Listalldoc() {
+		//log.debug("finding Roster instance with property: " + propertyName
+		//		+ ", value: " + value);
+		try {
+			ts = session.beginTransaction();
+			String queryString = "select d.docId from Doctor d";
+			Query queryObject = session.createQuery(queryString);
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
+	public List Listalldocname() {
+		//log.debug("finding Roster instance with property: " + propertyName
+		//		+ ", value: " + value);
+		try {
+			ts = session.beginTransaction();
+			String queryString = "select d.docName from Doctor d";
 			Query queryObject = session.createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {

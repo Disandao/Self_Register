@@ -49,7 +49,9 @@ public class Login_Action extends ActionSupport {
 		}
 		public String execute() throws Exception
 		{
-			System.out.println(ServletActionContext.getRequest().getSession().getAttribute("sRand"));
+			//System.out.println(ServletActionContext.getRequest().getSession().getAttribute("sRand"));
+			
+			
 			int id;
 			if(user.getName().isEmpty()||user.getPassword().isEmpty()){
 				error="用户名或密码为空！";
@@ -67,10 +69,12 @@ public class Login_Action extends ActionSupport {
 				return ERROR;
 			}
 			try {
-				System.out.println(user.getName());
-				System.out.println(user.getPassword());
+				//System.out.println(user.getName());
+				//
 				int i = dao.UserDAO.isExist(user.getName(),user.getPassword());
-				System.out.println("***************"+i);
+				User u = dao.UserDAO.findByName(user.getName());
+				//ServletActionContext.getRequest().setAttribute("idcard", u.getIdcard());
+				//System.out.println("***************"+i);
 				if(i==-1)
 				{
 					System.out.println("***************nininii");
@@ -88,11 +92,25 @@ public class Login_Action extends ActionSupport {
 				else 
 					id = i;
 				if(id==1)
+				{
+					ServletActionContext.getRequest().getSession().setAttribute("sessionname",user.getName());
+					ServletActionContext.getRequest().getSession().setAttribute("sessionidcard",u.getIdcard());
 					return "patient";
+				}
+					
 				else if(id==2)
+				{
+					ServletActionContext.getRequest().getSession().setAttribute("admin",user.getName());
 					return "admin";
+				}
+					
 				else if(id==3)
+				{
+					System.out.println(user.getName());
+					ServletActionContext.getRequest().getSession().setAttribute("doctorid",user.getName());
 					return "doctor";
+				}
+					
 				else
 					return ERROR;
 				

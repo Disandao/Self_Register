@@ -19,5 +19,11 @@
         <property name="password" type="string">
             <column name="password" length="45" />
         </property>
+        <set name="messages" inverse="true">
+            <key>
+                <column name="user_idcard" />
+            </key>
+            <one-to-many class="po.Message" />
+        </set>
     </class>
 </hibernate-mapping>

@@ -90,6 +90,19 @@ public class DepartmentDAO extends DefaultDao {
 			throw re;
 		}
 	}
+	public List Listalldep() {
+		//log.debug("finding Roster instance with property: " + propertyName
+		//		+ ", value: " + value);
+		try {
+			ts = session.beginTransaction();
+			String queryString = "select d.departName from Department d";
+			Query queryObject = session.createQuery(queryString);
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+	}
 	/*public List findByExample(Department instance) {
 		log.debug("finding Department instance by example");
 		try {

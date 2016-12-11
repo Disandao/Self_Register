@@ -1,0 +1,57 @@
+/* General ------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #fff;
+}
+
+
+/* Page - Container --------------------------------------------------------------------------------------------------*/
+.page-container {
+  width: 100%;
+}
+.page-container > .container {
+  padding: 40px 35px;
+  background-color: #fff;
+}
+
+
+.hentry .post-meta > span {
+  display: inline-block;
+  padding-left: 22px;
+  margin-right: 15px;
+  line-height: 22px;
+}
+.hentry .post-meta .date {
+  background: url("../images/calendar-icon.png") no-repeat left center;
+}
+.hentry .post-meta .category {
+  background: url("../images/category-icon.png") no-repeat left center;
+}
+
+.hentry .post-meta .comments {
+  background: url("../images/comment.png") no-repeat left center;
+}
+.hentry .post-meta .like-count {
+  float: right;
+  background: url("../images/like.png") no-repeat 4px 6px;
+}
+.hentry .post-meta .like-count:hover {
+  background: url("../images/like.png") no-repeat 4px -24px;
+  color: #395996;
+}
+
+
+
+.hentry.type-post .post-title {
+  padding-left: 35px;
+  background: url("../images/standard-large.png") no-repeat 0 3px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.hentry.type-post h1.post-title {
+  font-size: 26px;
+  line-height: 36px;
+  background-position: 0 6px;
+}
+.hentry.type-post h1.post-title a {
+  color: #3B4348;
+}

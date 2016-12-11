@@ -29,7 +29,7 @@
                 <img src="images/photo04.gif" alt="post image" />
                     <div class="posttext">
 	                    <p>个人信息：<s:property value="docInfor" /><br>联系电话：<s:property value="docTel" /></p>
-                      <div class="comment_more"><a href="#">预约</a></div>
+                      
                   </div>
               </div>
             </div>
