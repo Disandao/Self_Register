@@ -22,7 +22,8 @@ public class DepartToDoc_Action extends ActionSupport{
 	public String execute() throws Exception{
 		 DoctorDAO d = new DoctorDAO();
 		 Department depart = new Department();
-		 departName=new String(departName.getBytes("iso8859-1"),"utf-8");
+		 
+		 //departName=new String(departName.getBytes("iso8859-1"),"utf-8");
 		 depart.setDepartName(departName);
 		 System.out.println(departName);
 		 list_doc = d.findByDepartment(depart);

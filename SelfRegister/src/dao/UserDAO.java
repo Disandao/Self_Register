@@ -1,8 +1,6 @@
 package dao;
 
 import java.util.Iterator;
-
-
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -35,16 +33,15 @@ public class UserDAO extends DefaultDao {
 	public static final String ID = "id";
 	public static final String NAME = "name";
 	public static final String PASSWORD = "password";
-	Configuration conf = new Configuration();
-	SessionFactory sf = conf.configure().buildSessionFactory();
-	Session session = sf.openSession();
-	Transaction ts = null;
+	static Configuration conf = new Configuration();
+	static SessionFactory sf = conf.configure().buildSessionFactory();
+	static Session session = sf.openSession();
+	static Transaction ts = null;
 	 /**
 	     * 增加用户
 	     * @param user 要增加的用户
 	     */
-	   public void add(User user){
-		   Session session = sf.openSession();
+	   public static void add(User user){
 	        Transaction ts = null;
 	        try{
 	            ts = session.beginTransaction();
@@ -64,9 +61,8 @@ public class UserDAO extends DefaultDao {
 	     * @param password
 	     * @return -1:不存在用户名 ; -2:密码不正确 ; >0:登录成功(即返回该记录ID)
 	     */
-	    public int isExist(String name,String password){
+	    public static int isExist(String name,String password){
 	        //int state = 0 ;        //初始化状态变量
-	    	Session session = sf.openSession();
 	        try{
 	            Query query = session.createQuery("from User u where u.name = ?");
 	            query.setString(0, name);
@@ -97,7 +93,7 @@ public class UserDAO extends DefaultDao {
 	public void delete(long idcard) {
 		try {
 			 	ts = session.beginTransaction();
-			 	Query query = session.createQuery("delete from User u where u.idcard=?");  
+			   Query query = session.createQuery("delete from User u where u.idcard=?");  
 			    query.setLong(0, idcard);//设定条件参数  
 			    query.executeUpdate();
 			    System.out.println("删除成功！");
@@ -109,11 +105,35 @@ public class UserDAO extends DefaultDao {
         }
 	}
 
-	public User findByIdcard(long idcard) {
+	public static User findByIdcard(long idcard) {
 		try {
 			ts = session.beginTransaction();
 			Query query = session.createQuery("from User u where u.idcard=?");  
 			 query.setLong(0, idcard);//设定条件参数 
+			 List list = query.list();
+	         Iterator it = list.iterator();
+	         if(it.hasNext())
+	         {
+	        	 User user = (User)it.next();
+		         return user;
+	         }
+	         else
+	         {
+	        	System.out.println("用户不存在");
+		        return null;
+	         }
+	         
+		} catch (RuntimeException re){
+			log.error("get failed", re);
+			throw re;
+		}
+		
+	}
+	public static User findByName(String string) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from User u where u.name=?");  
+			 query.setString(0, string);//设定条件参数 
 			 List list = query.list();
 	         Iterator it = list.iterator();
 	         if(it.hasNext())

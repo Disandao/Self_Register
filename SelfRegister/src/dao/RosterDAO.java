@@ -1,9 +1,8 @@
 package dao;
 
 import java.util.List;
-
-
 import java.util.Iterator;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.LockMode;
@@ -13,6 +12,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Example;
+
 import po.Doctor;
 import po.Roster;
 
@@ -97,7 +97,28 @@ public class RosterDAO extends DefaultDao {
 			throw re;
 		}
 	}*/
-
+	public void update(String mon,String tue,String wed,String thu,String fri,String sat,String sun,String id) {
+		try {
+			ts = session.beginTransaction();
+			String hql = "update from Roster p set p.rosterMon = ?,p.rosterTue = ?,p.rosterWed = ?,p.rosterThu = ?,p.rosterFri = ?,p.rosterSat = ?,p.rosterSun = ? where p.rosterId=?";
+			Query query = session.createQuery(hql);
+			query.setString(0, mon);
+			query.setString(1, tue);
+			query.setString(2, wed);
+			query.setString(3, thu);
+			query.setString(4, fri);
+			query.setString(5, sat);
+			query.setString(6, sun);
+			query.setString(7, id);
+			query.executeUpdate();
+			ts.commit();
+		} catch (RuntimeException re) {
+			log.error("modify failed", re);
+			throw re;
+			}finally{
+	        	sf.close();
+		}
+		}
 	public Roster findById(java.lang.String id) {
 		//log.debug("getting Roster instance with id: " + id);
 		Session session = sf.openSession();

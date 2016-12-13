@@ -1,14 +1,20 @@
 package dao;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.LockMode;
 import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Example;
 
 import po.Patientinf;
+import po.User;
 
 /**
  * A data access object (DAO) providing persistence and search support for
@@ -28,29 +34,46 @@ public class PatientinfDAO extends DefaultDao {
 	public static final String SEX = "sex";
 	public static final String IDCARD = "idcard";
 	public static final String CONDITIONS = "conditions";
+	public static final String USERNAME = "username";
+	public static final String TEL = "tel";
+	public static final String NAME = "name";
+	Configuration conf = new Configuration();
+	SessionFactory sf = conf.configure().buildSessionFactory();
+	Session session = sf.openSession();
+	Transaction ts = null;
+	 /**
+	     * 增加用户
+	     * @param user 要增加的用户
+	     */
+	   public void add(Patientinf patient){
+	        Transaction ts = null;
+	        try{
+	            ts = session.beginTransaction();
+	            session.save(patient);
+	            ts.commit();
+	        }catch(Exception e){
+	            System.out.println("Patientinf.add()方法发生异常:");
+	            e.printStackTrace();
+	        }finally{
+	           sf.close();
+	        }
+	    }
 
-	public void save(Patientinf transientInstance) {
-		log.debug("saving Patientinf instance");
-		try {
-			getSession().save(transientInstance);
-			log.debug("save successful");
-		} catch (RuntimeException re) {
-			log.error("save failed", re);
-			throw re;
+	   public void delete(String idcard) {
+			try {
+				 	ts = session.beginTransaction();
+				   Query query = session.createQuery("delete from Patientinf p where p.idcard=?");  
+				    query.setString(0, idcard);//设定条件参数  
+				    query.executeUpdate();
+				    System.out.println("删除成功！");
+				    ts.commit();
+			} catch (RuntimeException re) {
+				throw re;
+			}finally{
+	        	sf.close();
+	        }
 		}
-	}
-
-	public void delete(Patientinf persistentInstance) {
-		log.debug("deleting Patientinf instance");
-		try {
-			getSession().delete(persistentInstance);
-			log.debug("delete successful");
-		} catch (RuntimeException re) {
-			log.error("delete failed", re);
-			throw re;
-		}
-	}
-
+/*
 	public Patientinf findById(java.lang.Integer id) {
 		log.debug("getting Patientinf instance with id: " + id);
 		try {
@@ -108,6 +131,18 @@ public class PatientinfDAO extends DefaultDao {
 		return findByProperty(CONDITIONS, conditions);
 	}
 
+	public List findByUsername(Object username) {
+		return findByProperty(USERNAME, username);
+	}
+
+	public List findByTel(Object tel) {
+		return findByProperty(TEL, tel);
+	}
+
+	public List findByName(Object name) {
+		return findByProperty(NAME, name);
+	}
+
 	public List findAll() {
 		log.debug("finding all Patientinf instances");
 		try {
@@ -153,5 +188,76 @@ public class PatientinfDAO extends DefaultDao {
 			log.error("attach failed", re);
 			throw re;
 		}
+	}*/
+	public List findAll() {
+		try {
+			ts = session.beginTransaction();
+			String queryString = "from Patientinf";
+			Query queryObject = session.createQuery(queryString);
+			return queryObject.list();
+		} catch (RuntimeException re) {
+			log.error("find all failed", re);
+			throw re;
+			}
+		}
+	public List findBydoctorID(String idcard) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.doctorid=?");  
+			 query.setString(0, idcard);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
 	}
+	public List findByoffice(String office) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.office=?");  
+			 query.setString(0, office);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
+	}
+	public List findByUsername(String name) {
+		try {
+			ts = session.beginTransaction();
+			Query query = session.createQuery("from Patientinf u where u.username=?");  
+			 query.setString(0, name);//设定条件参数 
+			 return query.list();
+	         
+		} catch (RuntimeException re){
+			log.error("find failed", re);
+			throw re;
+		}
+		
+	}
+	public void update(String name,String tel,String conditions,long idcard,String office,String username,int serial) {
+		try {
+			ts = session.beginTransaction();
+			String hql = "update from Patientinf p set p.name = ?,p.tel = ?,p.conditions = ?,p.idcard = ?,p.office = ?,p.username = ? where p.serial=?";
+			Query query = session.createQuery(hql);
+			query.setString(0, name);
+			query.setString(1, tel);
+			query.setString(2, conditions);
+			query.setLong(3, idcard);
+			query.setString(4, office);
+			query.setString(5, username);
+			query.setInteger(6, serial);
+			query.executeUpdate();
+			ts.commit();
+		} catch (RuntimeException re) {
+			log.error("modify failed", re);
+			throw re;
+			}finally{
+	        	sf.close();
+		}
+		}
 }

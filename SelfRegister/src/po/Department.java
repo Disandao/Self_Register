@@ -12,15 +12,20 @@ public class Department extends AbstractDepartment implements
 
 	/** default constructor */
 	public Department() {
-		
+
 	}
 
 	/** full constructor */
 	public Department(String departName, String departInfor) {
 		super(departName, departInfor);
 	}
+
 	public Department(String departName, String departInfor, Set doctors) {
 		super(departName, departInfor, doctors);
+	}
+	public Department(String departName, String departInfor,
+			Set illnesses, Set doctors) {
+		super(departName, departInfor, illnesses,doctors);
 	}
 
 }

@@ -14,6 +14,7 @@ public abstract class AbstractDepartment implements java.io.Serializable {
 
 	private String departName;
 	private String departInfor;
+	private Set illnesses = new HashSet(0);
 	private Set doctors = new HashSet(0);
 
 	// Constructors
@@ -28,16 +29,27 @@ public abstract class AbstractDepartment implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractDepartment(String departName, String departInfor) {
+	public AbstractDepartment(String departName, String departInfor
+			) {
 		this.departName = departName;
 		this.departInfor = departInfor;
-		
 	}
-	public AbstractDepartment(String departName, String departInfor, Set doctors) {
+	
+	public AbstractDepartment(String departName, String departInfor,
+			 Set doctors) {
 		this.departName = departName;
 		this.departInfor = departInfor;
 		this.doctors = doctors;
 	}
+	
+	public AbstractDepartment(String departName, String departInfor,
+			Set illnesses, Set doctors) {
+		this.departName = departName;
+		this.departInfor = departInfor;
+		this.illnesses = illnesses;
+		this.doctors = doctors;
+	}
+	
 
 	// Property accessors
 
@@ -55,6 +67,14 @@ public abstract class AbstractDepartment implements java.io.Serializable {
 
 	public void setDepartInfor(String departInfor) {
 		this.departInfor = departInfor;
+	}
+
+	public Set getIllnesses() {
+		return this.illnesses;
+	}
+
+	public void setIllnesses(Set illnesses) {
+		this.illnesses = illnesses;
 	}
 
 	public Set getDoctors() {

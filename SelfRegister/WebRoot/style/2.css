@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+}
+
+#block{
+	position:relative;
+	left:200px;
+	width:70%;
+	padding:30px;
+	background-color:white;
+	border:1px solid grey;
+}
+
+p{
+	text-indent:25px;
+}
+
+img{
+	width:50%;
+	padding-left:30px;
+	padding-right:10px;
+	float:left
+}
+
+h{
+	font-size:24px;
+	color:#09c;
+	font-family:"Arial Black", Gadget, sans-serif;
+}

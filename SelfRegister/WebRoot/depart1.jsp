@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>科室</title>
 <style>
 body {
     padding: 0;
@@ -140,7 +140,7 @@ div {
 
 
 </style>
-<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="main/index.html" ></IFRAME>
+<IFRAME NAME="content_frame" width=100% height=150 marginwidth=0 marginheight=0 SRC="navigation.jsp" ></IFRAME>
 </head>
 
 <body>
@@ -189,22 +189,22 @@ div {
 				<tbody>
 					<tr>
 						<td><a href="<s:url action="DoctorList"> <s:param name="departName" value="{'心血管内科'}"></s:param></s:url>">心血管内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,31.htm">神经内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,32.htm">消化内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,33.htm">内分泌科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,34.htm">免疫科</a></td>
+						<td><a href="buildingpage.jsp">神经内科</a></td>
+						<td><a href="buildingpage.jsp">消化内科</a></td>
+						<td><a href="buildingpage.jsp">内分泌科</a></td>
+						<td><a href="buildingpage.jsp">免疫科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,35.htm">呼吸科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,36.htm">肾病内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,37.htm">血液科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,38.htm">感染内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,39.htm">过敏反应科</a></td>
+						<td><a href="buildingpage.jsp">呼吸科</a></td>
+						<td><a href="buildingpage.jsp">肾病内科</a></td>
+						<td><a href="buildingpage.jsp">血液科</a></td>
+						<td><a href="buildingpage.jsp">感染内科</a></td>
+						<td><a href="buildingpage.jsp">过敏反应科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,40.htm">老年病科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,41.htm">普通内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,42.htm">高压氧科</a></td>
+						<td><a href="buildingpage.jsp">老年病科</a></td>
+						<td><a href="buildingpage.jsp">普通内科</a></td>
+						<td><a href="buildingpage.jsp">高压氧科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -214,25 +214,25 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,43.htm">神经外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,44.htm">功能神经外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,45.htm">心血管外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,46.htm">胸外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,47.htm">整形科</a></td>
+						<td><a href="buildingpage.jsp">神经外科</a></td>
+						<td><a href="buildingpage.jsp">功能神经外科</a></td>
+						<td><a href="buildingpage.jsp">心血管外科</a></td>
+						<td><a href="buildingpage.jsp">胸外科</a></td>
+						<td><a href="buildingpage.jsp">整形科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,48.htm">乳腺外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,49.htm">泌尿外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,50.htm">肝胆外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,51.htm">肛肠科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,52.htm">血管外科</a></td>
+						<td><a href="buildingpage.jsp">乳腺外科</a></td>
+						<td><a href="buildingpage.jsp">泌尿外科</a></td>
+						<td><a href="buildingpage.jsp">肝胆外科</a></td>
+						<td><a href="buildingpage.jsp">肛肠科</a></td>
+						<td><a href="buildingpage.jsp">血管外科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,53.htm">器官移植</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,54.htm">微创外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,55.htm">普外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,198.htm">脑外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,199.htm">烧伤科</a></td>
+						<td><a href="buildingpage.jsp">器官移植</a></td>
+						<td><a href="buildingpage.jsp">微创外科</a></td>
+						<td><a href="buildingpage.jsp">普外科</a></td>
+						<td><a href="buildingpage.jsp">脑外科</a></td>
+						<td><a href="buildingpage.jsp">烧伤科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -242,15 +242,15 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,56.htm">妇科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,57.htm">产科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,58.htm">妇科内分泌</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,59.htm">妇泌尿科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,61.htm">遗传咨询科</a></td>
+						<td><a href="buildingpage.jsp">妇科</a></td>
+						<td><a href="buildingpage.jsp">产科</a></td>
+						<td><a href="buildingpage.jsp">妇科内分泌</a></td>
+						<td><a href="buildingpage.jsp">妇泌尿科</a></td>
+						<td><a href="buildingpage.jsp">遗传咨询科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,62.htm">计划生育科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,63.htm">妇产科</a></td>
+						<td><a href="buildingpage.jsp">计划生育科</a></td>
+						<td><a href="buildingpage.jsp">妇产科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -260,7 +260,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,64.htm">生殖中心</a></td>
+						<td><a href="buildingpage.jsp">生殖中心</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -270,22 +270,22 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,65.htm">儿科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,66.htm">新生儿科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,67.htm">小儿呼吸科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,69.htm">小儿营养保健科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,71.htm">小儿心内科</a></td>
+						<td><a href="buildingpage.jsp">儿科</a></td>
+						<td><a href="buildingpage.jsp">新生儿科</a></td>
+						<td><a href="buildingpage.jsp">小儿呼吸科</a></td>
+						<td><a href="buildingpage.jsp">小儿营养保健科</a></td>
+						<td><a href="buildingpage.jsp">小儿心内科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,75.htm">小儿皮肤科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,79.htm">小儿精神科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,81.htm">小儿外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,82.htm">小儿心外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,84.htm">小儿骨科</a></td>
+						<td><a href="buildingpage.jsp">小儿皮肤科</a></td>
+						<td><a href="buildingpage.jsp">小儿精神科</a></td>
+						<td><a href="buildingpage.jsp">小儿外科</a></td>
+						<td><a href="buildingpage.jsp">小儿心外科</a></td>
+						<td><a href="buildingpage.jsp">小儿骨科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,86.htm">小儿神经外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,88.htm">小儿康复科</a></td>
+						<td><a href="buildingpage.jsp">小儿神经外科</a></td>
+						<td><a href="buildingpage.jsp">小儿康复科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -295,16 +295,16 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,90.htm">骨科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,91.htm">脊柱外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,92.htm">手外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,93.htm">创伤骨科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,94.htm">骨关节科</a></td>
+						<td><a href="buildingpage.jsp">骨科</a></td>
+						<td><a href="buildingpage.jsp">脊柱外科</a></td>
+						<td><a href="buildingpage.jsp">手外科</a></td>
+						<td><a href="buildingpage.jsp">创伤骨科</a></td>
+						<td><a href="buildingpage.jsp">骨关节科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,95.htm">矫形骨科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,96.htm">骨质疏松科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,203.htm">骨伤专科</a></td>
+						<td><a href="buildingpage.jsp">矫形骨科</a></td>
+						<td><a href="buildingpage.jsp">骨质疏松科</a></td>
+						<td><a href="buildingpage.jsp">骨伤专科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -314,21 +314,21 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,97.htm">眼科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,98.htm">小儿眼科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,99.htm">眼底</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,100.htm">角膜科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,101.htm">青光眼</a></td>
+						<td><a href="buildingpage.jsp">眼科</a></td>
+						<td><a href="buildingpage.jsp">小儿眼科</a></td>
+						<td><a href="buildingpage.jsp">眼底</a></td>
+						<td><a href="buildingpage.jsp">角膜科</a></td>
+						<td><a href="buildingpage.jsp">青光眼</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,102.htm">白内障</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,103.htm">眼外伤</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,104.htm">眼眶及肿瘤</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,105.htm">屈光</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,106.htm">眼整形</a></td>
+						<td><a href="buildingpage.jsp">白内障</a></td>
+						<td><a href="buildingpage.jsp">眼外伤</a></td>
+						<td><a href="buildingpage.jsp">眼眶及肿瘤</a></td>
+						<td><a href="buildingpage.jsp">屈光</a></td>
+						<td><a href="buildingpage.jsp">眼整形</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,107.htm">中医眼科</a></td>
+						<td><a href="buildingpage.jsp">中医眼科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -338,22 +338,22 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,108.htm">口腔科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,109.htm">颌面外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,110.htm">正畸科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,111.htm">牙体牙髓科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,112.htm">牙周科</a></td>
+						<td><a href="buildingpage.jsp">口腔科</a></td>
+						<td><a href="buildingpage.jsp">颌面外科</a></td>
+						<td><a href="buildingpage.jsp">正畸科</a></td>
+						<td><a href="buildingpage.jsp">牙体牙髓科</a></td>
+						<td><a href="buildingpage.jsp">牙周科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,113.htm">口腔粘膜科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,114.htm">儿童口腔科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,115.htm">口腔修复科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,116.htm">种植科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,117.htm">口腔预防科</a></td>
+						<td><a href="buildingpage.jsp">口腔粘膜科</a></td>
+						<td><a href="buildingpage.jsp">儿童口腔科</a></td>
+						<td><a href="buildingpage.jsp">口腔修复科</a></td>
+						<td><a href="buildingpage.jsp">种植科</a></td>
+						<td><a href="buildingpage.jsp">口腔预防科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,118.htm">口腔特诊科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,119.htm">口腔急诊科</a></td>
+						<td><a href="buildingpage.jsp">口腔特诊科</a></td>
+						<td><a href="buildingpage.jsp">口腔急诊科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -363,8 +363,8 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,120.htm">耳鼻喉</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,121.htm">头颈外科</a></td>
+						<td><a href="buildingpage.jsp">耳鼻喉</a></td>
+						<td><a href="buildingpage.jsp">头颈外科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -374,15 +374,15 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,122.htm">肿瘤内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,123.htm">肿瘤外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,124.htm">肿瘤妇科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,125.htm">放疗科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,126.htm">骨肿瘤科</a></td>
+						<td><a href="buildingpage.jsp">肿瘤内科</a></td>
+						<td><a href="buildingpage.jsp">肿瘤外科</a></td>
+						<td><a href="buildingpage.jsp">肿瘤妇科</a></td>
+						<td><a href="buildingpage.jsp">放疗科</a></td>
+						<td><a href="buildingpage.jsp">骨肿瘤科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,127.htm">肿瘤康复科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,128.htm">肿瘤综合科</a></td>
+						<td><a href="buildingpage.jsp">>肿瘤康复科</a></td>
+						<td><a href="buildingpage.jsp">肿瘤综合科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -392,8 +392,8 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,129.htm">皮肤科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,130.htm">性病科</a></td>
+						<td><a href="buildingpage.jsp">皮肤科</a></td>
+						<td><a href="buildingpage.jsp">性病科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -403,7 +403,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,131.htm">男性学科</a></td>
+						<td><a href="buildingpage.jsp">男性学科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -413,7 +413,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,132.htm">皮肤美容</a></td>
+						<td><a href="buildingpage.jsp">皮肤美容</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -423,7 +423,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,133.htm">烧伤科</a></td>
+						<td><a href="buildingpage.jsp">烧伤科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -433,11 +433,11 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,134.htm">精神科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,135.htm">心理咨询科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,136.htm">司法鉴定科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,137.htm">双相障碍科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,138.htm">药物依赖科</a></td>
+						<td><a href="buildingpage.jsp">精神科</a></td>
+						<td><a href="buildingpage.jsp">心理咨询科</a></td>
+						<td><a href="buildingpage.jsp">司法鉴定科</a></td>
+						<td><a href="buildingpage.jsp">双相障碍科</a></td>
+						<td><a href="buildingpage.jsp">药物依赖科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -447,43 +447,44 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,139.htm">中医妇产科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,140.htm">中医儿科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,141.htm">中医骨科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,142.htm">中医皮肤科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,143.htm">中医内分泌</a></td>
+						<td><a href="buildingpage.jsp">中医妇产科</a></td>
+						<td><a href="buildingpage.jsp">中医儿科</a></td>
+						<td><a href="buildingpage.jsp">中医骨科</a></td>
+						<td><a href="buildingpage.jsp">中医皮肤科</a></td>
+						<td><a href="buildingpage.jsp">中医内分泌</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,144.htm">中医消化科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,145.htm">中医呼吸科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,146.htm">中医肾病内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,147.htm">中医免疫内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,148.htm">中医心内科</a></td>
+						<td><a href="buildingpage.jsp">中医消化科</a></td>
+						<td><a href="buildingpage.jsp">中医呼吸科</a></td>
+						<td><a href="buildingpage.jsp">中医肾病内科</a></td>
+						<td><a href="buildingpage.jsp">中医免疫内科</a></td>
+						<td><a href="buildingpage.jsp">中医心内科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,149.htm">中医神经内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,150.htm">中医肿瘤科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,151.htm">中医血液科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,153.htm">中医肝病科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,154.htm">中医五官科</a></td>
+						<td><a href="buildingpage.jsp">中医神经内科</a></td>
+						<td><a href="buildingpage.jsp">中医肿瘤科</a></td>
+						<td><a href="buildingpage.jsp">中医血液科</a></td>
+						<td><a href="buildingpage.jsp">中医肝病科</a></td>
+						<td><a href="buildingpage.jsp">中医五官科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,155.htm">中医男科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,156.htm">针灸科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,157.htm">中医按摩科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,158.htm">中医外科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,159.htm">中医乳腺外科</a></td>
+						<td><a href="buildingpage.jsp">中医男科</a></td>
+						<td><a href="buildingpage.jsp">针灸科</a></td>
+						<td><a href="buildingpage.jsp">中医按摩科</a></td>
+						<td><a href="buildingpage.jsp">中医外科</a></td>
+						<td><a href="buildingpage.jsp">中医乳腺外科</a></td>
+					
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,160.htm">中医肛肠科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,161.htm">中医老年病科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,162.htm">中医科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,205.htm">中医内科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,206.htm">中医脾胃科</a></td>
+						<td><a href="buildingpage.jsp">中医肛肠科</a></td>
+						<td><a href="buildingpage.jsp">中医老年病科</a></td>
+						<td><a href="buildingpage.jsp">中医科</a></td>
+						<td><a href="buildingpage.jsp">中医内科</a></td>
+						<td><a href="buildingpage.jsp">中医脾胃科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,207.htm">膏方门诊</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,208.htm">中医骨伤科</a></td>
+						<td><a href="buildingpage.jsp">膏方门诊</a></td>
+						<td><a href="buildingpage.jsp">中医骨伤科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -493,7 +494,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,163.htm">中西医结合科</a></td>
+						<td><a href="buildingpage.jsp">中西医结合科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -503,8 +504,8 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,164.htm">肝病科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,165.htm">传染科</a></td>
+						<td><a href="buildingpage.jsp">肝病科</a></td>
+						<td><a href="buildingpage.jsp">传染科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -514,7 +515,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,167.htm">结核病科</a></td>
+						<td><a href="buildingpage.jsp">结核病科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -524,7 +525,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,168.htm">介入医学科</a></td>
+						<td><a href="buildingpage.jsp">介入医学科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -534,8 +535,8 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,169.htm">康复科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,170.htm">理疗科</a></td>
+						<td><a href="buildingpage.jsp">康复科</a></td>
+						<td><a href="buildingpage.jsp">理疗科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -545,7 +546,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,171.htm">运动医学科</a></td>
+						<td><a href="buildingpage.jsp">运动医学科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -555,8 +556,8 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,172.htm">疼痛科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,173.htm">麻醉科</a></td>
+						<td><a href="buildingpage.jsp">疼痛科</a></td>
+						<td><a href="buildingpage.jsp">麻醉科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -566,7 +567,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,174.htm">职业病科</a></td>
+						<td><a href="buildingpage.jsp">职业病科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -576,7 +577,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,175.htm">地方病科</a></td>
+						<td><a href="buildingpage.jsp">地方病科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -586,7 +587,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,176.htm">营养科</a></td>
+						<td><a href="buildingpage.jsp">营养科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -596,10 +597,10 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,177.htm">核医学科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,178.htm">放射科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,179.htm">超声科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,180.htm">医学影像科</a></td>
+						<td><a href="buildingpage.jsp">核医学科</a></td>
+						<td><a href="buildingpage.jsp">放射科</a></td>
+						<td><a href="buildingpage.jsp">超声科</a></td>
+						<td><a href="buildingpage.jsp">医学影像科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -609,7 +610,7 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,181.htm">病理科</a></td>
+						<td><a href="buildingpage.jsp">病理科</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -619,24 +620,24 @@ div {
 			<table width="672" height="44" border="0" class="ksgh_c_right_table">
 				<tbody>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,182.htm">急诊科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,183.htm">特色医疗科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,184.htm">干部诊疗科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,185.htm">重症监护室</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,186.htm">特诊科</a></td>
+						<td><a href="buildingpage.jsp">急诊科</a></td>
+						<td><a href="buildingpage.jsp">特色医疗科</a></td>
+						<td><a href="buildingpage.jsp">干部诊疗科</a></td>
+						<td><a href="buildingpage.jsp">重症监护室</a></td>
+						<td><a href="buildingpage.jsp">特诊科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,187.htm">检验科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,188.htm">预防保健科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,189.htm">功能检查科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,190.htm">全科</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,192.htm">体检科</a></td>
+						<td><a href="buildingpage.jsp">检验科</a></td>
+						<td><a href="buildingpage.jsp">预防保健科</a></td>
+						<td><a href="buildingpage.jsp">功能检查科</a></td>
+						<td><a href="buildingpage.jsp">全科</a></td>
+						<td><a href="buildingpage.jsp">体检科</a></td>
 					</tr>
 					<tr>
-						<td><a href="/dpt/hps/1,0,0,0,193.htm">血透中心</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,194.htm">实验中心</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,195.htm">碎石中心</a></td>
-						<td><a href="/dpt/hps/1,0,0,0,209.htm">变态反应科</a></td>
+						<td><a href="buildingpage.jsp">血透中心</a></td>
+						<td><a href="buildingpage.jsp">实验中心</a></td>
+						<td><a href="buildingpage.jsp">碎石中心</a></td>
+						<td><a href="buildingpage.jsp">变态反应科</a></td>
 					</tr>
 				</tbody>
 			</table>
